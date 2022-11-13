@@ -58,7 +58,10 @@ public class ReactiveSources {
     }
 
     public static Flux<String> unresponsiveFlux() {
-        return Flux.never();
+        //return Flux.never();
+        return Flux
+                .just("A", "B", "C", "D", "E", "F", "G","H")
+                .delayElements(Duration.ofSeconds(1)); 
     }
 
     public static Mono<String> unresponsiveMono() {
