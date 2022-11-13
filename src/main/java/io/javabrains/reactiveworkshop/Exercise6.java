@@ -2,7 +2,6 @@ package io.javabrains.reactiveworkshop;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
 
 public class Exercise6 {
 
